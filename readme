@@ -1,0 +1,2 @@
+Struts2是一个基于mvc设计模式的web应用框架，它本质上相当于一个servlet，在mvc设计模式中，struts2作为控制器(controller)来建立模型与视图的数据交互。
+Struts2以webwork为核心，采用拦截器的机制来处理用户的请求，这样的设计也使得业务逻辑控制器能够与servletapi完全脱离开，所以Struts2可以理解为webwork的更新产品
