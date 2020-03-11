@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="method" extends="struts-default">
+        <!--允许包中全局的方法法-->
+        <global-allowed-methods></global-allowed-methods>
+        <!--{1}：代表第一个*的值-->
+        <action name="*" class="com.itlike.struts2.MethodAction" method="{1}">
+            <!--允许通过通配符访问的方法-->
+            <allowed-methods>add,update,delete,find</allowed-methods>
+        </action>
+<!--        <action name="add" class="com.itlike.struts2.MethodAction" method="add"/>-->
+<!--        <action name="delete" class="com.itlike.struts2.MethodAction" method="delete"/>-->
+<!--        <action name="update" class="com.itlike.struts2.MethodAction" method="update"/>-->
+<!--        <action name="find" class="com.itlike.struts2.MethodAction" method="find"/>-->
+    </package>
+</struts>

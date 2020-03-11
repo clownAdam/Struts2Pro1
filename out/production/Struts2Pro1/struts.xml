@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+<!--    配置常量-->
+<!--    <constant name="struts.action.extension" value="action"></constant>-->
+    <!--package manager action-->
+    <!--<package name="struts" extends="struts-default" >
+        &lt;!&ndash;action name ++++ class&ndash;&gt;
+        <action name="hello" class="com.itlike.struts2.HelloAction">
+            &lt;!&ndash;结果页&ndash;&gt;
+            <result name="success">/clown.jsp</result>
+        </action>
+    </package>-->
+    <include file="clown_struts.xml"/>
+    <include file="method_struts.xml"/>
+</struts>
